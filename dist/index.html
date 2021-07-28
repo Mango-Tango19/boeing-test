@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Boeing Form</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/Logo.png" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container justify-content-center">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <form>
+            <div class="form-group">
+              <label for="companySelect" class="form-label mt-4">Выберите организацию</label>
+              <select class="form-select form-field" id="companySelect">
+                <option>-</option>
+                <option>Boeing</option>
+                <option>Relative</option>
+              </select>
+            </div>
+
+            <div class="form-group mt-3">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control form-field" id="guest-name" placeholder="Ваше имя"/>
+              <label for="guest-name">Ваше имя</label>
+            </div>
+
+            <div class="friend-info hidden">
+
+            <div class="form-group mt-3">
+              <div class="form-floating mb-3">
+              <input type="text" class="form-control form-field" id="friend-name" placeholder="Введите имя друга" />
+              <label for="friend-name">Введите имя друга</label>
+            </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <div class="form-floating mb-3">
+              <input type="number" class="form-control form-field" id="friend-age" placeholder="Введите возраст друга" />
+              <label for="friend-age">Введите возраст друга</label>
+            </div>
+            </div>
+
+          </div>
+
+            <div class="form-group">
+              <label for="timeSelect" class="form-label mt-2">Выберите удобное время</label>
+              <select class="form-select form-field" id="timeSelect">
+                <option>-</option>
+                <option>13:00-15:00</option>
+                <option>17:00-19:00</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="commentTextarea" class="form-label mt-4">Ваш комментарий</label>
+              <textarea class="form-control" id="commentTextarea" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-5" id="btn-send">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
